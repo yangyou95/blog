@@ -9,7 +9,7 @@
 Step function returns a bool value of whether the terminal state has been reached.  Parameters:
 
 * state (class State can be override): Current state of the world
-* random_num: Random number in a scenario
+* random_num: Random number in a scenario (Need to dig into, how to link with prob obs)
 * action: Action to be take, ACT_TYPE is a int value
 * reward: Reward recieved after taking action from state
 * obs: OBS_TYPE is a uint64_t value
@@ -36,7 +36,7 @@ ObsProb function, it returns the observation probability of an observation obs i
 		ACT_TYPE action) const = 0;
 ```
 
-Initial Beilief function, it returns the initial belief
+Initial Beilief function, it returns the initial belief (Dig into the belief type)
 
 ```c++
 	virtual Belief* InitialBelief(const State* start,
